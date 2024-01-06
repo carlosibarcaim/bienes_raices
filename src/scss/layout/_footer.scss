@@ -1,0 +1,27 @@
+.footer{
+    background-color: $grisOscuro;
+    text-align: center;        
+    margin-bottom: 0;
+        a{
+            color: $blanco;
+            text-decoration: none;
+            padding: 1rem;
+            &:hover{
+                color: $verde;
+            }
+        }
+        nav{
+            @include tablet {
+                text-align: left;
+                flex-direction: row;
+            }
+            display:flex;
+            flex-direction: column;
+        }
+}
+.footer-contenedor{
+    padding:2.5rem 0 1rem 0;
+}
+.copyright{
+    color: $blanco;
+}

@@ -1,0 +1,22 @@
+.btnAnuncio{
+    @include boton($amarillo, block);
+    margin-bottom: 2rem;
+}
+.btnVerde{
+    @include boton($verde, flex);
+    justify-content: center;
+    margin-top: 3rem;
+}
+.btnContactanos{
+    @include boton($amarillo, inline-block);
+    text-align: center;
+}
+.btnRojo-block{
+    @include boton($rojo, block);
+    text-align: center;
+    
+}
+.btnAmarillo-block{
+    @include boton($amarillo, block);
+    text-align: center;
+}

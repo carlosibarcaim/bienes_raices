@@ -1,0 +1,21 @@
+.seccion{
+    h1{
+        font-weight: 500;
+    }
+}
+.sobre-nosotros{
+    @include tablet {
+        h4{
+            margin-top: 0;
+        }
+        @include grid(2, 3rem)
+    }
+}
+.info-nosotros{
+    h4{
+        font-weight: bold;
+    }
+    p{
+        text-align: justify;
+    }
+}

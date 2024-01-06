@@ -1,0 +1,69 @@
+.derecha{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+        align-items: flex-end;
+    }
+}
+.dark-mode-boton{
+    width: 3rem;
+    margin-bottom: 2rem;
+    filter: invert(100%);
+    &:hover{
+        cursor: pointer;
+    }
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+
+    @include tablet {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        
+    }
+}
+
+.navegacion{
+    @include tablet {
+        display: flex;
+        align-items: center;
+        visibility: visible;
+        opacity: 1;
+    }
+    height: 0;
+
+    a{
+        &:hover{
+            color: $verde;
+        }
+        display: flex;   
+        flex-direction: column;
+        color: $blanco;
+        text-decoration: none;
+        margin-inline: 1rem;
+        text-align: center;   
+        margin-top: 2rem;
+    }
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s ease-in-out, opacity .5s linear, height 1s linear;
+}
+.mobile-menu{
+    @include tablet {
+        display: none;
+    }
+    img{
+        width: 5rem;
+    }
+}
+.mostrar{
+    visibility: visible;
+    opacity: 1;
+    transition: visibility .3s ease-in-out, opacity .5s linear, height 1s linear;
+    height: auto;
+}

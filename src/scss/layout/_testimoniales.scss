@@ -1,0 +1,22 @@
+.testimonial{
+    background-color: $verde;
+    border-radius: 5%;
+}
+.testimonial-info{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    color: $blanco;
+    padding-top: 3rem;
+    
+    img{
+        padding-left: 3rem;
+    }
+    blockquote{
+        margin-left: 1rem;
+        
+    }
+    p{
+        color: $blanco;
+        text-align: right;
+    }
+}

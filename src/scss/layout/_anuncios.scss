@@ -1,0 +1,35 @@
+.contenedor-anuncios{
+    @include tablet {
+        @include grid(3, 3rem);
+    }
+}
+.anuncio{
+    @include tablet {
+        margin-bottom: 0;
+    }
+    margin-bottom: 2rem;
+    border: solid 1px $grisOscuro;
+    background-color: $gris
+}
+.info-anuncio{
+    margin: 1rem;
+    span{
+        color: $verde;
+        font-weight: bold;
+    }
+    
+}
+.iconos-anuncio{
+    list-style: none;
+    @include grid(6, 2rem);
+    img{
+        height: 3rem;
+        align-content: center;
+    }
+    p{
+        margin-top: 0;
+        font-weight: bold;
+    }
+    padding: 1rem 2rem;
+    max-width: 40rem;
+}
